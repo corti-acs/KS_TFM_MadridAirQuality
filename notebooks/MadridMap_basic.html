@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c1acd0e898ce44169636081ca03babfa {
+                    position: relative;
+                    width: 850.0px;
+                    height: 750.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    
+            <style> #vega_lite_19ec09a62f3e43e49fb799e97fad4281 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    <script src="https://cdn.jsdelivr.net/npm/vega@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
+    
+            <style> #vega_lite_e7fb9a2931204273a6143ffa9efae35d {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_7b6ce0dcb7d04587914fcf8cd6c491a2 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_2e5706edc8d6450c833b38d1f10915bd {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_12f27e986da74df4852e0778930f1ab7 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_e21b48d201904506b2f4113a8c703f25 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_ee1c673c63a1494cbe574c07f6d14fe4 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_64e07df23f0749e8a9e87adcd9fc1799 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_14dd692cf4504a1a8c2764a505b8ca44 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_86b56ca8a8e84412b04b67de41a8a755 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_63ed7e43db54447d9bc7af391934a808 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_d6a81bfd2fa34825ac4936de43bab9b7 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_1d7f1e6cb94144aca1a8a5a46d93fc42 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_3c9dd205371f4be5b45083e63028ccf4 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_a9deb9bd172e4f7b81c3bfddc8eb4610 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_17ba21c2d5e44e48bc2188fd9f9d60f9 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_e20acfd356304e829c321694e2678dd7 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_d7895e2fbbd24522a2027e43765d6824 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_48017a5e56464020afdf2a0afc8daf4c {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_74534f9ce0b24ac3861baa6deca9e4c7 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_d5c0623966da4e8888800e1ea297a1cf {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_65cfa3e61473409093279e143eced60d {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_be8bce07e4114c2e92a1e4eb9382e0a2 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+    
+            <style> #vega_lite_a5c11302a77c4c79914fb4b8a6144bd6 {
+                position : relative;
+                width : 450.0px;
+                height: 250.0px;
+                left: 0.0%;
+                top: 0.0%;
+            </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c1acd0e898ce44169636081ca03babfa" ></div>
+        
+</body>
+<script>    
+    
+            var map_c1acd0e898ce44169636081ca03babfa = L.map(
+                "map_c1acd0e898ce44169636081ca03babfa",
+                {
+                    center: [40.4398904, -3.6903729],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_69e9c12b18c94a7caec23b4acc3fad7b = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 8, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var marker_860f73a7929249898b611585e0d22ee3 = L.marker(
+                [40.4238823, -3.7122567],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_272ad604fbfb4fa595258b502b20f33f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_860f73a7929249898b611585e0d22ee3.setIcon(icon_272ad604fbfb4fa595258b502b20f33f);
+        
+    
+        var popup_3e148e2227e04261a75fdd3d33f76660 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_19ec09a62f3e43e49fb799e97fad4281 = $(`             <div id="vega_lite_19ec09a62f3e43e49fb799e97fad4281"></div>             `)[0];
+            popup_3e148e2227e04261a75fdd3d33f76660.setContent(vega_lite_19ec09a62f3e43e49fb799e97fad4281);
+        
+
+        marker_860f73a7929249898b611585e0d22ee3.bindPopup(popup_3e148e2227e04261a75fdd3d33f76660)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_19ec09a62f3e43e49fb799e97fad4281, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-c32e8c89295bd2a93025c287a0584bb5"}, "datasets": {"data-c32e8c89295bd2a93025c287a0584bb5": [{"Forecast": 43.71262082490111, "NO2_index": 43.71262082490111, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 33.2776835713461, "NO2_index": 33.2776835713461, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 43.19819566538412, "NO2_index": 43.19819566538412, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 34.122902535818916, "NO2_index": 34.122902535818916, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 35.47317705437315, "NO2_index": 35.47317705437315, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 28.94997377684193, "NO2_index": 28.94997377684193, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 34.55502318283786, "NO2_index": 34.55502318283786, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 30.860974935460696, "NO2_index": 30.860974935460696, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 35.318573688762235, "NO2_index": 35.318573688762235, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 36.31847597779881, "NO2_index": 36.31847597779881, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 34.55947611787888, "NO2_index": 34.55947611787888, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 29.410044266431, "NO2_index": 29.410044266431, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 32.21412605633398, "NO2_index": 32.21412605633398, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 28.11836097543399, "NO2_index": 28.11836097543399, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 35.39774904535575, "NO2_index": 35.39774904535575, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 35.624530226783705, "NO2_index": 35.624530226783705, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 37.54774552428469, "NO2_index": 37.54774552428469, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 45.14583977671164, "NO2_index": 45.14583977671164, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 32.72403670746483, "NO2_index": 32.72403670746483, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 34.57081445376572, "NO2_index": 34.57081445376572, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 33.7878965387947, "NO2_index": 33.7878965387947, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 34.4149134163386, "NO2_index": 34.4149134163386, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 36.39546318627919, "NO2_index": 36.39546318627919, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 38.17194718000618, "NO2_index": 38.17194718000618, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 38.90814603526826, "NO2_index": 38.90814603526826, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector073": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_860f73a7929249898b611585e0d22ee3.bindTooltip(
+                `<div>
+                     Station 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b22bf82d3c44c1183e709d22a961be1 = L.marker(
+                [40.4215533, -3.6823158],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_db9440ee1aeb43c5a7d5d0da97a3f5c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_9b22bf82d3c44c1183e709d22a961be1.setIcon(icon_db9440ee1aeb43c5a7d5d0da97a3f5c5);
+        
+    
+        var popup_e20192ca338b45d9ba72e4334daeb0d7 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_e7fb9a2931204273a6143ffa9efae35d = $(`             <div id="vega_lite_e7fb9a2931204273a6143ffa9efae35d"></div>             `)[0];
+            popup_e20192ca338b45d9ba72e4334daeb0d7.setContent(vega_lite_e7fb9a2931204273a6143ffa9efae35d);
+        
+
+        marker_9b22bf82d3c44c1183e709d22a961be1.bindPopup(popup_e20192ca338b45d9ba72e4334daeb0d7)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_e7fb9a2931204273a6143ffa9efae35d, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-367c379e2b45812bbd479bee435520d8"}, "datasets": {"data-367c379e2b45812bbd479bee435520d8": [{"Forecast": null, "NO2_index": 54.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 43.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 38.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 28.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 29.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 25.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 21.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 32.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 42.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 41.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 35.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 33.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 39.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 43.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 57.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 55.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 59.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 61.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 50.855648739349874, "NO2_index": 72.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 43.91021774357496, "NO2_index": 43.91021774357496, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 45.59744749746386, "NO2_index": 45.59744749746386, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 41.126436341555674, "NO2_index": 41.126436341555674, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 39.522364807943106, "NO2_index": 39.522364807943106, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 46.85820275385954, "NO2_index": 46.85820275385954, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 45.294256660523956, "NO2_index": 45.294256660523956, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 48.577312528942414, "NO2_index": 48.577312528942414, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 53.95123886928498, "NO2_index": 53.95123886928498, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 47.35981371034247, "NO2_index": 47.35981371034247, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 48.02610961927317, "NO2_index": 48.02610961927317, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 40.01712290559176, "NO2_index": 40.01712290559176, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 44.87535151529946, "NO2_index": 44.87535151529946, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 43.80113582648491, "NO2_index": 43.80113582648491, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 49.13004129681365, "NO2_index": 49.13004129681365, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 46.28624430237092, "NO2_index": 46.28624430237092, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 38.61794592085644, "NO2_index": 38.61794592085644, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 42.9222972447288, "NO2_index": 42.9222972447288, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 42.66924764688763, "NO2_index": 42.66924764688763, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 48.00876337901237, "NO2_index": 48.00876337901237, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 56.463345413590496, "NO2_index": 56.463345413590496, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 53.69176466732333, "NO2_index": 53.69176466732333, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 52.439299103021, "NO2_index": 52.439299103021, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 54.19544163810633, "NO2_index": 54.19544163810633, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 53.74622849002333, "NO2_index": 53.74622849002333, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 46.55857906376518, "NO2_index": 46.55857906376518, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector074": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_9b22bf82d3c44c1183e709d22a961be1.bindTooltip(
+                `<div>
+                     Station 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7add25a670af443489cf9deca0327962 = L.marker(
+                [40.4514734, -3.6773491],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_387f28873aea4e68ae4986aa8a4c8f9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_7add25a670af443489cf9deca0327962.setIcon(icon_387f28873aea4e68ae4986aa8a4c8f9f);
+        
+    
+        var popup_b2de14db1fb14bf5bbbae75fcec917f3 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_7b6ce0dcb7d04587914fcf8cd6c491a2 = $(`             <div id="vega_lite_7b6ce0dcb7d04587914fcf8cd6c491a2"></div>             `)[0];
+            popup_b2de14db1fb14bf5bbbae75fcec917f3.setContent(vega_lite_7b6ce0dcb7d04587914fcf8cd6c491a2);
+        
+
+        marker_7add25a670af443489cf9deca0327962.bindPopup(popup_b2de14db1fb14bf5bbbae75fcec917f3)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_7b6ce0dcb7d04587914fcf8cd6c491a2, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-f23a66341e06dfd671c663a40ac5bad8"}, "datasets": {"data-f23a66341e06dfd671c663a40ac5bad8": [{"Forecast": null, "NO2_index": 49.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 17.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 18.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 21.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 19.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 14.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 22.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 28.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 27.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 28.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 28.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 23.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 28.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 37.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 56.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 77.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 80.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 83.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 58.52575573196475, "NO2_index": 86.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 47.567385357196684, "NO2_index": 47.567385357196684, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 48.39367831914039, "NO2_index": 48.39367831914039, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 42.85820807051104, "NO2_index": 42.85820807051104, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 43.67587524694632, "NO2_index": 43.67587524694632, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 47.28932583481161, "NO2_index": 47.28932583481161, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 43.71383183937592, "NO2_index": 43.71383183937592, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 43.25533181760156, "NO2_index": 43.25533181760156, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 45.29889412261596, "NO2_index": 45.29889412261596, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 41.88992146134521, "NO2_index": 41.88992146134521, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 42.40587831019431, "NO2_index": 42.40587831019431, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 34.90612195661951, "NO2_index": 34.90612195661951, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 38.66124921297782, "NO2_index": 38.66124921297782, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 37.87256342093645, "NO2_index": 37.87256342093645, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 41.70536546725037, "NO2_index": 41.70536546725037, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 37.92685041995681, "NO2_index": 37.92685041995681, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 40.620821986454246, "NO2_index": 40.620821986454246, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 42.316016392807924, "NO2_index": 42.316016392807924, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 36.191391449760964, "NO2_index": 36.191391449760964, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 43.79288459530033, "NO2_index": 43.79288459530033, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 49.182137763028436, "NO2_index": 49.182137763028436, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 52.38060996856229, "NO2_index": 52.38060996856229, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 50.94190014811007, "NO2_index": 50.94190014811007, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 54.90781626650831, "NO2_index": 54.90781626650831, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 46.532256390010396, "NO2_index": 46.532256390010396, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 39.95876041767578, "NO2_index": 39.95876041767578, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector075": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_7add25a670af443489cf9deca0327962.bindTooltip(
+                `<div>
+                     Station 11
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0064fc79f612412da96adc0e2555ea50 = L.marker(
+                [40.4400457, -3.6392422],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_08cea60b8351494e80f40e4475b2a71f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_0064fc79f612412da96adc0e2555ea50.setIcon(icon_08cea60b8351494e80f40e4475b2a71f);
+        
+    
+        var popup_c7fb5ba157bc4062aa022402eec6c6e4 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_2e5706edc8d6450c833b38d1f10915bd = $(`             <div id="vega_lite_2e5706edc8d6450c833b38d1f10915bd"></div>             `)[0];
+            popup_c7fb5ba157bc4062aa022402eec6c6e4.setContent(vega_lite_2e5706edc8d6450c833b38d1f10915bd);
+        
+
+        marker_0064fc79f612412da96adc0e2555ea50.bindPopup(popup_c7fb5ba157bc4062aa022402eec6c6e4)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_2e5706edc8d6450c833b38d1f10915bd, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-bc9d8aa9b8669b0208c7044f0796d92f"}, "datasets": {"data-bc9d8aa9b8669b0208c7044f0796d92f": [{"Forecast": null, "NO2_index": 18.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 19.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 15.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 10.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 12.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 8.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 9.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 14.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 28.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 27.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 19.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 19.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 20.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 28.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 40.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 57.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 68.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 55.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 43.3400007396603, "NO2_index": 70.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 32.60612915261241, "NO2_index": 32.60612915261241, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 34.74060334730875, "NO2_index": 34.74060334730875, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 33.74570329187447, "NO2_index": 33.74570329187447, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 33.29278759580719, "NO2_index": 33.29278759580719, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 37.43056664200513, "NO2_index": 37.43056664200513, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 33.06681433408007, "NO2_index": 33.06681433408007, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 36.42541707999899, "NO2_index": 36.42541707999899, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 35.431960996542315, "NO2_index": 35.431960996542315, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 32.54428645026188, "NO2_index": 32.54428645026188, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 33.797982009482745, "NO2_index": 33.797982009482745, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 30.242614705901012, "NO2_index": 30.242614705901012, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 29.428449534306893, "NO2_index": 29.428449534306893, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 28.828142890107127, "NO2_index": 28.828142890107127, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 35.20495521297562, "NO2_index": 35.20495521297562, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 34.12383391321053, "NO2_index": 34.12383391321053, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 27.81516467245892, "NO2_index": 27.81516467245892, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 34.38518853589233, "NO2_index": 34.38518853589233, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 32.23858061372997, "NO2_index": 32.23858061372997, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 37.54321517232404, "NO2_index": 37.54321517232404, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 38.952588195972986, "NO2_index": 38.952588195972986, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 42.34592612763564, "NO2_index": 42.34592612763564, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 43.102385200488115, "NO2_index": 43.102385200488115, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 42.47848826673152, "NO2_index": 42.47848826673152, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 38.82240518837936, "NO2_index": 38.82240518837936, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 31.811599075306823, "NO2_index": 31.811599075306823, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector076": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_0064fc79f612412da96adc0e2555ea50.bindTooltip(
+                `<div>
+                     Station 16
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9979120749ad49b392997db7ea226062 = L.marker(
+                [40.347147, -3.7133167],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_c26148cdd60a476ea40aea4b6dd2ba66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_9979120749ad49b392997db7ea226062.setIcon(icon_c26148cdd60a476ea40aea4b6dd2ba66);
+        
+    
+        var popup_e70c7523591d4d0d98eafd01faebddeb = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_12f27e986da74df4852e0778930f1ab7 = $(`             <div id="vega_lite_12f27e986da74df4852e0778930f1ab7"></div>             `)[0];
+            popup_e70c7523591d4d0d98eafd01faebddeb.setContent(vega_lite_12f27e986da74df4852e0778930f1ab7);
+        
+
+        marker_9979120749ad49b392997db7ea226062.bindPopup(popup_e70c7523591d4d0d98eafd01faebddeb)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_12f27e986da74df4852e0778930f1ab7, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-4bbbd551468aa122595c11836822fcc9"}, "datasets": {"data-4bbbd551468aa122595c11836822fcc9": [{"Forecast": null, "NO2_index": 76.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 63.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 53.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 45.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 40.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 35.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 35.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 37.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 40.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 41.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 44.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 50.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 46.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 43.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 38.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 42.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 43.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 51.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 42.56800441704543, "NO2_index": 73.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 32.5972319959706, "NO2_index": 32.5972319959706, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 34.569335612758024, "NO2_index": 34.569335612758024, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 38.37426307429405, "NO2_index": 38.37426307429405, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 40.88451962766686, "NO2_index": 40.88451962766686, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 43.62664815177988, "NO2_index": 43.62664815177988, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 46.59392315299955, "NO2_index": 46.59392315299955, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 50.342059112042044, "NO2_index": 50.342059112042044, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 52.522277918958, "NO2_index": 52.522277918958, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 51.9016916535013, "NO2_index": 51.9016916535013, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 47.88474747453738, "NO2_index": 47.88474747453738, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 41.318765309857255, "NO2_index": 41.318765309857255, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 41.89778283573793, "NO2_index": 41.89778283573793, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 41.07790070229428, "NO2_index": 41.07790070229428, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 42.89193850903198, "NO2_index": 42.89193850903198, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 44.34172442435987, "NO2_index": 44.34172442435987, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 40.52940695908532, "NO2_index": 40.52940695908532, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 44.94287239996701, "NO2_index": 44.94287239996701, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 41.229921313748555, "NO2_index": 41.229921313748555, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 46.20268206085352, "NO2_index": 46.20268206085352, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 48.33702936766071, "NO2_index": 48.33702936766071, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 52.522908135691836, "NO2_index": 52.522908135691836, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 47.46374555784998, "NO2_index": 47.46374555784998, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 51.34572414180175, "NO2_index": 51.34572414180175, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 48.09580428385006, "NO2_index": 48.09580428385006, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 39.72243362197756, "NO2_index": 39.72243362197756, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector077": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_9979120749ad49b392997db7ea226062.bindTooltip(
+                `<div>
+                     Station 17
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_259687140506480a8d6a49d18ee376ec = L.marker(
+                [40.3947825, -3.7318356],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_835055525c804c13a3b0e4138bb46f35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_259687140506480a8d6a49d18ee376ec.setIcon(icon_835055525c804c13a3b0e4138bb46f35);
+        
+    
+        var popup_e5b91ebd2fab4e78a248cbb665aca79d = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_e21b48d201904506b2f4113a8c703f25 = $(`             <div id="vega_lite_e21b48d201904506b2f4113a8c703f25"></div>             `)[0];
+            popup_e5b91ebd2fab4e78a248cbb665aca79d.setContent(vega_lite_e21b48d201904506b2f4113a8c703f25);
+        
+
+        marker_259687140506480a8d6a49d18ee376ec.bindPopup(popup_e5b91ebd2fab4e78a248cbb665aca79d)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_e21b48d201904506b2f4113a8c703f25, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-022c3dfe0070fc7d7ed637eea125be96"}, "datasets": {"data-022c3dfe0070fc7d7ed637eea125be96": [{"Forecast": null, "NO2_index": 46.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 38.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 35.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 30.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 25.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 26.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 22.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 26.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 28.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 27.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 30.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 39.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 45.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 50.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 51.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 52.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 61.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 65.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 49.520980992298384, "NO2_index": 77.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 45.01896115822735, "NO2_index": 45.01896115822735, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 44.61412131638879, "NO2_index": 44.61412131638879, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 42.792675650681204, "NO2_index": 42.792675650681204, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 38.33493550123747, "NO2_index": 38.33493550123747, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 38.427713907015274, "NO2_index": 38.427713907015274, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 39.947239778439105, "NO2_index": 39.947239778439105, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 42.7361253747761, "NO2_index": 42.7361253747761, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 43.945914425351205, "NO2_index": 43.945914425351205, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 40.139386665552664, "NO2_index": 40.139386665552664, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 39.68855689131987, "NO2_index": 39.68855689131987, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 36.560880954573335, "NO2_index": 36.560880954573335, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 36.68662858584941, "NO2_index": 36.68662858584941, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 35.384736825708096, "NO2_index": 35.384736825708096, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 39.22795021993255, "NO2_index": 39.22795021993255, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 39.08765689923955, "NO2_index": 39.08765689923955, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 37.285186793547105, "NO2_index": 37.285186793547105, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 37.43306982601999, "NO2_index": 37.43306982601999, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 36.38562329195916, "NO2_index": 36.38562329195916, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 41.58870640948787, "NO2_index": 41.58870640948787, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 43.631519281577944, "NO2_index": 43.631519281577944, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 42.833708185462235, "NO2_index": 42.833708185462235, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 43.96522350550783, "NO2_index": 43.96522350550783, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 45.97436177881234, "NO2_index": 45.97436177881234, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 40.85440439205878, "NO2_index": 40.85440439205878, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 37.45740977586044, "NO2_index": 37.45740977586044, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector078": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_259687140506480a8d6a49d18ee376ec.bindTooltip(
+                `<div>
+                     Station 18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84c30e878f114e7cb8668950fd7fec63 = L.marker(
+                [40.4193577, -3.7473445],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_f2d44467b2f4489db3733f87748dddfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_84c30e878f114e7cb8668950fd7fec63.setIcon(icon_f2d44467b2f4489db3733f87748dddfc);
+        
+    
+        var popup_2b75742c1df84af2a7f23bfcab3641e3 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_ee1c673c63a1494cbe574c07f6d14fe4 = $(`             <div id="vega_lite_ee1c673c63a1494cbe574c07f6d14fe4"></div>             `)[0];
+            popup_2b75742c1df84af2a7f23bfcab3641e3.setContent(vega_lite_ee1c673c63a1494cbe574c07f6d14fe4);
+        
+
+        marker_84c30e878f114e7cb8668950fd7fec63.bindPopup(popup_2b75742c1df84af2a7f23bfcab3641e3)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_ee1c673c63a1494cbe574c07f6d14fe4, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-79db499dc51bff7113955516d17e5cde"}, "datasets": {"data-79db499dc51bff7113955516d17e5cde": [{"Forecast": null, "NO2_index": 43.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 36.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 37.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 32.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 28.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 25.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 23.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 21.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 18.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 14.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 10.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 19.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 28.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 39.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 49.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 47.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 52.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 62.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 55.25167453323749, "NO2_index": 68.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 47.295757954745596, "NO2_index": 47.295757954745596, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 44.86420716436288, "NO2_index": 44.86420716436288, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 43.78477535058356, "NO2_index": 43.78477535058356, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 38.98614007220671, "NO2_index": 38.98614007220671, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 36.266309403622145, "NO2_index": 36.266309403622145, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 40.02055857597429, "NO2_index": 40.02055857597429, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 35.24979117041738, "NO2_index": 35.24979117041738, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 33.713895818159074, "NO2_index": 33.713895818159074, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 33.10492911069325, "NO2_index": 33.10492911069325, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 32.0089636523852, "NO2_index": 32.0089636523852, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 25.603146473069145, "NO2_index": 25.603146473069145, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 28.702062135658316, "NO2_index": 28.702062135658316, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 28.22147157585954, "NO2_index": 28.22147157585954, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 29.89290866017542, "NO2_index": 29.89290866017542, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 33.282559156521195, "NO2_index": 33.282559156521195, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 28.12925016862646, "NO2_index": 28.12925016862646, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 31.979667720417112, "NO2_index": 31.979667720417112, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 30.86649192830876, "NO2_index": 30.86649192830876, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 31.900298520995527, "NO2_index": 31.900298520995527, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 31.39251408481625, "NO2_index": 31.39251408481625, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 32.1115890679538, "NO2_index": 32.1115890679538, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 33.58747289285563, "NO2_index": 33.58747289285563, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 31.79645761293871, "NO2_index": 31.79645761293871, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 31.897122270092026, "NO2_index": 31.897122270092026, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 30.31522845786267, "NO2_index": 30.31522845786267, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector079": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_84c30e878f114e7cb8668950fd7fec63.bindTooltip(
+                `<div>
+                     Station 24
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a6872e230954e8da1dc463bcd008ed3 = L.marker(
+                [40.4769179, -3.5800258],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_c0d0cbe746ac49e19872a81b257e7a39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_9a6872e230954e8da1dc463bcd008ed3.setIcon(icon_c0d0cbe746ac49e19872a81b257e7a39);
+        
+    
+        var popup_ad09275977614ce3a91b7cd1f601e8a7 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_64e07df23f0749e8a9e87adcd9fc1799 = $(`             <div id="vega_lite_64e07df23f0749e8a9e87adcd9fc1799"></div>             `)[0];
+            popup_ad09275977614ce3a91b7cd1f601e8a7.setContent(vega_lite_64e07df23f0749e8a9e87adcd9fc1799);
+        
+
+        marker_9a6872e230954e8da1dc463bcd008ed3.bindPopup(popup_ad09275977614ce3a91b7cd1f601e8a7)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_64e07df23f0749e8a9e87adcd9fc1799, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-345205de33853611ff9d6aca4f6a8976"}, "datasets": {"data-345205de33853611ff9d6aca4f6a8976": [{"Forecast": null, "NO2_index": 32.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 29.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 19.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 19.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 26.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 25.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 30.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 50.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 48.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 39.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 38.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 34.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 37.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 36.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 43.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 45.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 58.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 62.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 47.91570206502665, "NO2_index": 82.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 38.75197644691679, "NO2_index": 38.75197644691679, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 41.50055747235703, "NO2_index": 41.50055747235703, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 44.87584466455826, "NO2_index": 44.87584466455826, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 43.53040640209882, "NO2_index": 43.53040640209882, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 41.72345255874231, "NO2_index": 41.72345255874231, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 43.00927372646173, "NO2_index": 43.00927372646173, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 44.625187167513644, "NO2_index": 44.625187167513644, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 42.48632900163316, "NO2_index": 42.48632900163316, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 40.358563477345875, "NO2_index": 40.358563477345875, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 41.06579046908462, "NO2_index": 41.06579046908462, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 37.38001714053394, "NO2_index": 37.38001714053394, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 35.96177127864874, "NO2_index": 35.96177127864874, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 37.47827573334119, "NO2_index": 37.47827573334119, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 41.904393812825774, "NO2_index": 41.904393812825774, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 41.037975614909676, "NO2_index": 41.037975614909676, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 35.48028800837892, "NO2_index": 35.48028800837892, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 40.08395657714304, "NO2_index": 40.08395657714304, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 40.64940967950228, "NO2_index": 40.64940967950228, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 43.72206353438276, "NO2_index": 43.72206353438276, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 44.620590609925486, "NO2_index": 44.620590609925486, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 44.523702292845755, "NO2_index": 44.523702292845755, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 46.01044267132626, "NO2_index": 46.01044267132626, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 46.905022056554785, "NO2_index": 46.905022056554785, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 40.14967323084845, "NO2_index": 40.14967323084845, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 33.842974809959756, "NO2_index": 33.842974809959756, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector080": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_9a6872e230954e8da1dc463bcd008ed3.bindTooltip(
+                `<div>
+                     Station 27
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_921804ce2ccf4e40b98180601dafe438 = L.marker(
+                [40.4192091, -3.7031662],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_cc20c2a9353440259efbd18ee73fc7a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_921804ce2ccf4e40b98180601dafe438.setIcon(icon_cc20c2a9353440259efbd18ee73fc7a1);
+        
+    
+        var popup_3148444b195b4565941aba7f1549b9e0 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_14dd692cf4504a1a8c2764a505b8ca44 = $(`             <div id="vega_lite_14dd692cf4504a1a8c2764a505b8ca44"></div>             `)[0];
+            popup_3148444b195b4565941aba7f1549b9e0.setContent(vega_lite_14dd692cf4504a1a8c2764a505b8ca44);
+        
+
+        marker_921804ce2ccf4e40b98180601dafe438.bindPopup(popup_3148444b195b4565941aba7f1549b9e0)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_14dd692cf4504a1a8c2764a505b8ca44, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-8082a4b675071ca70954923928c824a7"}, "datasets": {"data-8082a4b675071ca70954923928c824a7": [{"Forecast": null, "NO2_index": 51.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 46.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 46.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 46.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 37.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 34.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 31.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 34.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 36.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 43.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 44.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 44.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 49.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 58.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 61.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 56.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 58.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 57.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 44.37813105645738, "NO2_index": 61.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 41.47882416318506, "NO2_index": 41.47882416318506, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 43.115784865481146, "NO2_index": 43.115784865481146, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 39.96486425074, "NO2_index": 39.96486425074, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 35.42009410905518, "NO2_index": 35.42009410905518, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 39.966428683789985, "NO2_index": 39.966428683789985, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 44.038165080356634, "NO2_index": 44.038165080356634, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 44.153037731964716, "NO2_index": 44.153037731964716, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 47.851918248632316, "NO2_index": 47.851918248632316, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 44.70915755052663, "NO2_index": 44.70915755052663, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 45.01739658235301, "NO2_index": 45.01739658235301, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 39.86678116580115, "NO2_index": 39.86678116580115, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 39.525672107950676, "NO2_index": 39.525672107950676, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 39.2518727785655, "NO2_index": 39.2518727785655, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 43.039515115301626, "NO2_index": 43.039515115301626, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 40.70941442936282, "NO2_index": 40.70941442936282, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 36.96798791162438, "NO2_index": 36.96798791162438, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 41.5472891229366, "NO2_index": 41.5472891229366, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 40.79110600005559, "NO2_index": 40.79110600005559, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 43.711263948532974, "NO2_index": 43.711263948532974, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 47.51564227949501, "NO2_index": 47.51564227949501, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 45.33433275153293, "NO2_index": 45.33433275153293, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 46.81392727503887, "NO2_index": 46.81392727503887, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 46.19159549769707, "NO2_index": 46.19159549769707, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 41.765866002966554, "NO2_index": 41.765866002966554, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 38.974399816991735, "NO2_index": 38.974399816991735, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector081": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_921804ce2ccf4e40b98180601dafe438.bindTooltip(
+                `<div>
+                     Station 35
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5dbb1cf920094718a9cd93e52169d4d2 = L.marker(
+                [40.4079517, -3.6453104],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_af44efa1580649f3bd27f21c8bd1e3d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_5dbb1cf920094718a9cd93e52169d4d2.setIcon(icon_af44efa1580649f3bd27f21c8bd1e3d6);
+        
+    
+        var popup_7eafaf394db24e1883cae5860600d30d = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_86b56ca8a8e84412b04b67de41a8a755 = $(`             <div id="vega_lite_86b56ca8a8e84412b04b67de41a8a755"></div>             `)[0];
+            popup_7eafaf394db24e1883cae5860600d30d.setContent(vega_lite_86b56ca8a8e84412b04b67de41a8a755);
+        
+
+        marker_5dbb1cf920094718a9cd93e52169d4d2.bindPopup(popup_7eafaf394db24e1883cae5860600d30d)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_86b56ca8a8e84412b04b67de41a8a755, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-b520c70a9f95fafe74899792ea6d941c"}, "datasets": {"data-b520c70a9f95fafe74899792ea6d941c": [{"Forecast": null, "NO2_index": 27.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 29.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 33.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 19.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 13.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 12.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 13.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 24.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 32.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 32.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 31.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 27.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 41.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 45.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 60.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 59.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 57.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 58.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 52.11636469851321, "NO2_index": 65.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 41.8145130849998, "NO2_index": 41.8145130849998, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 41.37632386320221, "NO2_index": 41.37632386320221, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 37.886688782630685, "NO2_index": 37.886688782630685, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 42.558911933217836, "NO2_index": 42.558911933217836, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 41.02518185637526, "NO2_index": 41.02518185637526, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 38.16050897299806, "NO2_index": 38.16050897299806, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 41.42842359062518, "NO2_index": 41.42842359062518, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 43.98944113667055, "NO2_index": 43.98944113667055, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 40.78466171693378, "NO2_index": 40.78466171693378, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 37.464342786216896, "NO2_index": 37.464342786216896, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 36.133811221472556, "NO2_index": 36.133811221472556, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 33.21519045791047, "NO2_index": 33.21519045791047, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 35.09758288590271, "NO2_index": 35.09758288590271, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 39.35225986040707, "NO2_index": 39.35225986040707, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 37.21126034824795, "NO2_index": 37.21126034824795, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 33.77132328287507, "NO2_index": 33.77132328287507, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 38.17924780647009, "NO2_index": 38.17924780647009, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 38.44288750291075, "NO2_index": 38.44288750291075, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 42.535054537785946, "NO2_index": 42.535054537785946, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 46.7168127952573, "NO2_index": 46.7168127952573, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 49.638204436097155, "NO2_index": 49.638204436097155, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 44.16892422702811, "NO2_index": 44.16892422702811, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 46.41148572285432, "NO2_index": 46.41148572285432, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 43.85176816673782, "NO2_index": 43.85176816673782, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 37.80857222655983, "NO2_index": 37.80857222655983, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector082": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_5dbb1cf920094718a9cd93e52169d4d2.bindTooltip(
+                `<div>
+                     Station 36
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c20c5bb3ab04c3d865ad4d2d06eb19d = L.marker(
+                [40.4455439, -3.7071303],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_8ad850c8b2e447ca977f2e9c8563eda8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_9c20c5bb3ab04c3d865ad4d2d06eb19d.setIcon(icon_8ad850c8b2e447ca977f2e9c8563eda8);
+        
+    
+        var popup_025edd7759574ce2b4beba4cbd949f57 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_63ed7e43db54447d9bc7af391934a808 = $(`             <div id="vega_lite_63ed7e43db54447d9bc7af391934a808"></div>             `)[0];
+            popup_025edd7759574ce2b4beba4cbd949f57.setContent(vega_lite_63ed7e43db54447d9bc7af391934a808);
+        
+
+        marker_9c20c5bb3ab04c3d865ad4d2d06eb19d.bindPopup(popup_025edd7759574ce2b4beba4cbd949f57)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_63ed7e43db54447d9bc7af391934a808, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-a621c73726b21c83c0570b6e9e66c92f"}, "datasets": {"data-a621c73726b21c83c0570b6e9e66c92f": [{"Forecast": null, "NO2_index": 76.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 60.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 52.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 52.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 45.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 39.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 35.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 38.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 51.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 66.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 34.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 33.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 38.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 50.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 64.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 67.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 65.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 70.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 51.18611523576938, "NO2_index": 86.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 46.06522610572556, "NO2_index": 46.06522610572556, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 45.759019185057525, "NO2_index": 45.759019185057525, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 38.27302208623718, "NO2_index": 38.27302208623718, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 37.618815198720306, "NO2_index": 37.618815198720306, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 41.711220253776766, "NO2_index": 41.711220253776766, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 50.985529660713446, "NO2_index": 50.985529660713446, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 51.78856871794774, "NO2_index": 51.78856871794774, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 54.539116521157396, "NO2_index": 54.539116521157396, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 48.48548664131281, "NO2_index": 48.48548664131281, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 48.242874123776204, "NO2_index": 48.242874123776204, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 43.569846811423176, "NO2_index": 43.569846811423176, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 46.434436747388126, "NO2_index": 46.434436747388126, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 43.7906876434257, "NO2_index": 43.7906876434257, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 47.55837413637012, "NO2_index": 47.55837413637012, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 43.53353426318856, "NO2_index": 43.53353426318856, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 38.94690934665228, "NO2_index": 38.94690934665228, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 39.94191057539318, "NO2_index": 39.94191057539318, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 40.626981823013345, "NO2_index": 40.626981823013345, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 46.44593048669837, "NO2_index": 46.44593048669837, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 53.296443632948986, "NO2_index": 53.296443632948986, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 50.27310300139508, "NO2_index": 50.27310300139508, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 49.73923544264157, "NO2_index": 49.73923544264157, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 54.03086426142654, "NO2_index": 54.03086426142654, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 48.32362176503489, "NO2_index": 48.32362176503489, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 43.145291932812164, "NO2_index": 43.145291932812164, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector083": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_9c20c5bb3ab04c3d865ad4d2d06eb19d.bindTooltip(
+                `<div>
+                     Station 38
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63aa6736a4e744c68d96f62c22199612 = L.marker(
+                [40.4782322, -3.7115364],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_c02dd91e40d94d568053ff0bd63178f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_63aa6736a4e744c68d96f62c22199612.setIcon(icon_c02dd91e40d94d568053ff0bd63178f0);
+        
+    
+        var popup_464888e79957455eab71f2ebfb64cde1 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_d6a81bfd2fa34825ac4936de43bab9b7 = $(`             <div id="vega_lite_d6a81bfd2fa34825ac4936de43bab9b7"></div>             `)[0];
+            popup_464888e79957455eab71f2ebfb64cde1.setContent(vega_lite_d6a81bfd2fa34825ac4936de43bab9b7);
+        
+
+        marker_63aa6736a4e744c68d96f62c22199612.bindPopup(popup_464888e79957455eab71f2ebfb64cde1)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_d6a81bfd2fa34825ac4936de43bab9b7, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-4141b2df1b8b940f01a821b74c892c98"}, "datasets": {"data-4141b2df1b8b940f01a821b74c892c98": [{"Forecast": null, "NO2_index": 71.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 53.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 41.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 42.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 36.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 36.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 35.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 33.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 38.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 41.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 43.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 30.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 34.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 41.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 53.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 57.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 67.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 79.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 61.287048222828446, "NO2_index": 80.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 46.50474644613146, "NO2_index": 46.50474644613146, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 45.59981967576541, "NO2_index": 45.59981967576541, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 40.49347037997426, "NO2_index": 40.49347037997426, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 44.81974602818543, "NO2_index": 44.81974602818543, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 47.11576905963442, "NO2_index": 47.11576905963442, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 49.68500977541537, "NO2_index": 49.68500977541537, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 53.16994112558534, "NO2_index": 53.16994112558534, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 53.96891480786782, "NO2_index": 53.96891480786782, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 44.88245924483206, "NO2_index": 44.88245924483206, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 48.6257157622327, "NO2_index": 48.6257157622327, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 42.864486288521114, "NO2_index": 42.864486288521114, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 42.224595844078266, "NO2_index": 42.224595844078266, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 37.834430664624215, "NO2_index": 37.834430664624215, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 42.91336887083106, "NO2_index": 42.91336887083106, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 40.114886516018295, "NO2_index": 40.114886516018295, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 42.495535171058705, "NO2_index": 42.495535171058705, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 41.6369275483908, "NO2_index": 41.6369275483908, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 39.14028428499492, "NO2_index": 39.14028428499492, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 47.138838229160015, "NO2_index": 47.138838229160015, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 53.11912693700601, "NO2_index": 53.11912693700601, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 46.66720762455818, "NO2_index": 46.66720762455818, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 51.03688533644473, "NO2_index": 51.03688533644473, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 56.526191210883596, "NO2_index": 56.526191210883596, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 49.87720368205164, "NO2_index": 49.87720368205164, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 39.215234756680935, "NO2_index": 39.215234756680935, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector084": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_63aa6736a4e744c68d96f62c22199612.bindTooltip(
+                `<div>
+                     Station 39
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4b669e28ca242e09a31edb36679fe14 = L.marker(
+                [40.3881478, -3.6515286],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_11ee12913bb848ad99e1077d90628d45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_b4b669e28ca242e09a31edb36679fe14.setIcon(icon_11ee12913bb848ad99e1077d90628d45);
+        
+    
+        var popup_bdad6c6544d544699c5187936cd3dcb5 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_1d7f1e6cb94144aca1a8a5a46d93fc42 = $(`             <div id="vega_lite_1d7f1e6cb94144aca1a8a5a46d93fc42"></div>             `)[0];
+            popup_bdad6c6544d544699c5187936cd3dcb5.setContent(vega_lite_1d7f1e6cb94144aca1a8a5a46d93fc42);
+        
+
+        marker_b4b669e28ca242e09a31edb36679fe14.bindPopup(popup_bdad6c6544d544699c5187936cd3dcb5)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_1d7f1e6cb94144aca1a8a5a46d93fc42, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-ea9a5bb4ad0b3db713f115c2510f0071"}, "datasets": {"data-ea9a5bb4ad0b3db713f115c2510f0071": [{"Forecast": null, "NO2_index": 56.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 37.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 39.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 30.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 19.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 21.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 21.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 41.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 43.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 36.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 36.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 29.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 47.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 50.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 43.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 45.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 46.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 50.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 41.60397323834533, "NO2_index": 63.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 32.97927136511726, "NO2_index": 32.97927136511726, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 35.35958437731678, "NO2_index": 35.35958437731678, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 33.75470627452339, "NO2_index": 33.75470627452339, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 35.4868209241, "NO2_index": 35.4868209241, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 40.31535172667008, "NO2_index": 40.31535172667008, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 41.49558746301044, "NO2_index": 41.49558746301044, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 43.133438245715425, "NO2_index": 43.133438245715425, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 45.174099733872545, "NO2_index": 45.174099733872545, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 42.63882451101081, "NO2_index": 42.63882451101081, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 39.908662177791555, "NO2_index": 39.908662177791555, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 35.515196540535484, "NO2_index": 35.515196540535484, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 37.035738811224206, "NO2_index": 37.035738811224206, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 36.710425804670855, "NO2_index": 36.710425804670855, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 40.2650729259085, "NO2_index": 40.2650729259085, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 37.06566272272464, "NO2_index": 37.06566272272464, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 36.01569748100876, "NO2_index": 36.01569748100876, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 38.983839553881275, "NO2_index": 38.983839553881275, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 38.49400833012347, "NO2_index": 38.49400833012347, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 45.0882582723439, "NO2_index": 45.0882582723439, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 44.54790377792417, "NO2_index": 44.54790377792417, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 47.204426080663225, "NO2_index": 47.204426080663225, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 44.03867879923173, "NO2_index": 44.03867879923173, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 45.25921116643869, "NO2_index": 45.25921116643869, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 42.87620423165513, "NO2_index": 42.87620423165513, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 34.682164234660405, "NO2_index": 34.682164234660405, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector085": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_b4b669e28ca242e09a31edb36679fe14.bindTooltip(
+                `<div>
+                     Station 40
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02a3996f4bb946d68403722bf97c95a5 = L.marker(
+                [40.3980991, -3.6868138],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_68c3fef9a5d74c56b8517c515cdad328 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_02a3996f4bb946d68403722bf97c95a5.setIcon(icon_68c3fef9a5d74c56b8517c515cdad328);
+        
+    
+        var popup_051e624f0a674f8f999c39d0738d2cf5 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_3c9dd205371f4be5b45083e63028ccf4 = $(`             <div id="vega_lite_3c9dd205371f4be5b45083e63028ccf4"></div>             `)[0];
+            popup_051e624f0a674f8f999c39d0738d2cf5.setContent(vega_lite_3c9dd205371f4be5b45083e63028ccf4);
+        
+
+        marker_02a3996f4bb946d68403722bf97c95a5.bindPopup(popup_051e624f0a674f8f999c39d0738d2cf5)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_3c9dd205371f4be5b45083e63028ccf4, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-42d132d44648f10516052634af00f3a5"}, "datasets": {"data-42d132d44648f10516052634af00f3a5": [{"Forecast": null, "NO2_index": 46.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 40.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 35.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 30.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 27.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 26.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 23.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 27.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 27.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 25.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 34.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 44.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 50.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 48.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 45.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 46.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 49.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 40.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 21.38650246476673, "NO2_index": 69.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 21.97620196029414, "NO2_index": 21.97620196029414, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 30.125035535482148, "NO2_index": 30.125035535482148, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 25.74927060549566, "NO2_index": 25.74927060549566, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 29.065340464975165, "NO2_index": 29.065340464975165, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 33.25146376489069, "NO2_index": 33.25146376489069, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 36.71330928166219, "NO2_index": 36.71330928166219, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 36.3554540435243, "NO2_index": 36.3554540435243, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 40.00160602304293, "NO2_index": 40.00160602304293, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 37.43813954303032, "NO2_index": 37.43813954303032, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 35.11242156668313, "NO2_index": 35.11242156668313, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 33.73741966029162, "NO2_index": 33.73741966029162, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 31.408859424880966, "NO2_index": 31.408859424880966, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 33.078446157329125, "NO2_index": 33.078446157329125, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 39.21235852448125, "NO2_index": 39.21235852448125, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 32.477587653548945, "NO2_index": 32.477587653548945, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 30.900228708197204, "NO2_index": 30.900228708197204, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 39.19353664783237, "NO2_index": 39.19353664783237, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 38.052579028187495, "NO2_index": 38.052579028187495, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 38.37869963231646, "NO2_index": 38.37869963231646, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 41.286666307506245, "NO2_index": 41.286666307506245, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 41.50549987513134, "NO2_index": 41.50549987513134, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 38.883734113923616, "NO2_index": 38.883734113923616, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 42.50425365786833, "NO2_index": 42.50425365786833, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 33.81536635312088, "NO2_index": 33.81536635312088, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 31.75891895391402, "NO2_index": 31.75891895391402, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector086": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_02a3996f4bb946d68403722bf97c95a5.bindTooltip(
+                `<div>
+                     Station 47
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a969349fa0842bb84b35bdbec315cd6 = L.marker(
+                [40.4398904, -3.6903729],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_0e4c196d88b941b0b68b2a942f6c6396 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_0a969349fa0842bb84b35bdbec315cd6.setIcon(icon_0e4c196d88b941b0b68b2a942f6c6396);
+        
+    
+        var popup_aa1db58f6e8d44908a735d22a71067e0 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_a9deb9bd172e4f7b81c3bfddc8eb4610 = $(`             <div id="vega_lite_a9deb9bd172e4f7b81c3bfddc8eb4610"></div>             `)[0];
+            popup_aa1db58f6e8d44908a735d22a71067e0.setContent(vega_lite_a9deb9bd172e4f7b81c3bfddc8eb4610);
+        
+
+        marker_0a969349fa0842bb84b35bdbec315cd6.bindPopup(popup_aa1db58f6e8d44908a735d22a71067e0)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_a9deb9bd172e4f7b81c3bfddc8eb4610, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-c7c6685141532929fb84b902cfa4b168"}, "datasets": {"data-c7c6685141532929fb84b902cfa4b168": [{"Forecast": null, "NO2_index": 41.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 23.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 22.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 23.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 18.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 14.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 17.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 25.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 35.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 29.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 25.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 25.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 33.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 42.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 59.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 67.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 69.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 70.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 59.54468253312224, "NO2_index": 78.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 48.991660087718245, "NO2_index": 48.991660087718245, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 48.880579479437834, "NO2_index": 48.880579479437834, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 43.784008075588595, "NO2_index": 43.784008075588595, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 41.41635129367292, "NO2_index": 41.41635129367292, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 44.10933582188483, "NO2_index": 44.10933582188483, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 41.839721845457355, "NO2_index": 41.839721845457355, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 43.29348738324123, "NO2_index": 43.29348738324123, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 43.091328695934145, "NO2_index": 43.091328695934145, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 40.19090063953368, "NO2_index": 40.19090063953368, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 39.45527405208908, "NO2_index": 39.45527405208908, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 37.08471987920731, "NO2_index": 37.08471987920731, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 36.46432541525502, "NO2_index": 36.46432541525502, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 33.48658435176931, "NO2_index": 33.48658435176931, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 41.18599449512951, "NO2_index": 41.18599449512951, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 36.78598631819443, "NO2_index": 36.78598631819443, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 35.6220377158676, "NO2_index": 35.6220377158676, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 38.15826032546678, "NO2_index": 38.15826032546678, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 36.14974931282033, "NO2_index": 36.14974931282033, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 43.05709014564604, "NO2_index": 43.05709014564604, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 46.57920373925301, "NO2_index": 46.57920373925301, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 47.678362041094076, "NO2_index": 47.678362041094076, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 46.08489327236178, "NO2_index": 46.08489327236178, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 47.444577982505166, "NO2_index": 47.444577982505166, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 44.073754534936086, "NO2_index": 44.073754534936086, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 36.90853888197726, "NO2_index": 36.90853888197726, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector087": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_0a969349fa0842bb84b35bdbec315cd6.bindTooltip(
+                `<div>
+                     Station 48
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a3e845771c3440293a4d4d5fb6fa94c = L.marker(
+                [40.4144444, -3.6824999],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_1adacf79dfa440768a762be9202debd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_2a3e845771c3440293a4d4d5fb6fa94c.setIcon(icon_1adacf79dfa440768a762be9202debd6);
+        
+    
+        var popup_f2f75f6d687548f6a652194619ce09f7 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_17ba21c2d5e44e48bc2188fd9f9d60f9 = $(`             <div id="vega_lite_17ba21c2d5e44e48bc2188fd9f9d60f9"></div>             `)[0];
+            popup_f2f75f6d687548f6a652194619ce09f7.setContent(vega_lite_17ba21c2d5e44e48bc2188fd9f9d60f9);
+        
+
+        marker_2a3e845771c3440293a4d4d5fb6fa94c.bindPopup(popup_f2f75f6d687548f6a652194619ce09f7)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_17ba21c2d5e44e48bc2188fd9f9d60f9, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-8da713494240d4c519733f4a641a3656"}, "datasets": {"data-8da713494240d4c519733f4a641a3656": [{"Forecast": null, "NO2_index": 54.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 42.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 34.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 25.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 19.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 15.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 14.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 16.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 22.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 30.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 29.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 33.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 40.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 47.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 57.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 53.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 55.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 47.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 37.88619157906689, "NO2_index": 38.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 32.656397283780194, "NO2_index": 32.656397283780194, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 33.57780728287268, "NO2_index": 33.57780728287268, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 31.142617410375305, "NO2_index": 31.142617410375305, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 29.650193339163934, "NO2_index": 29.650193339163934, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 30.95643040686933, "NO2_index": 30.95643040686933, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 34.674736583278786, "NO2_index": 34.674736583278786, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 36.086042154295285, "NO2_index": 36.086042154295285, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 37.90918666552338, "NO2_index": 37.90918666552338, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 32.787417008262366, "NO2_index": 32.787417008262366, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 33.03049801866553, "NO2_index": 33.03049801866553, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 31.05019937178973, "NO2_index": 31.05019937178973, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 29.692524931164282, "NO2_index": 29.692524931164282, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 27.334571402006024, "NO2_index": 27.334571402006024, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 31.042840867399242, "NO2_index": 31.042840867399242, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 31.161301470035433, "NO2_index": 31.161301470035433, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 28.55085955254573, "NO2_index": 28.55085955254573, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 31.42456085275635, "NO2_index": 31.42456085275635, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 29.36484914968883, "NO2_index": 29.36484914968883, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 34.67246370918028, "NO2_index": 34.67246370918028, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 39.54818058236368, "NO2_index": 39.54818058236368, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 36.8674613741997, "NO2_index": 36.8674613741997, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 37.83442588805659, "NO2_index": 37.83442588805659, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 36.82975038383243, "NO2_index": 36.82975038383243, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 33.65490574076975, "NO2_index": 33.65490574076975, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 29.12158730248366, "NO2_index": 29.12158730248366, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector088": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_2a3e845771c3440293a4d4d5fb6fa94c.bindTooltip(
+                `<div>
+                     Station 49
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e72ca7c8c414dedbced884b3637308d = L.marker(
+                [40.4655841, -3.6887449],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_9b60ea6489b7459da8320dbdef99005a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_4e72ca7c8c414dedbced884b3637308d.setIcon(icon_9b60ea6489b7459da8320dbdef99005a);
+        
+    
+        var popup_c2081a7c50994328a8ee686924aa00ff = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_e20acfd356304e829c321694e2678dd7 = $(`             <div id="vega_lite_e20acfd356304e829c321694e2678dd7"></div>             `)[0];
+            popup_c2081a7c50994328a8ee686924aa00ff.setContent(vega_lite_e20acfd356304e829c321694e2678dd7);
+        
+
+        marker_4e72ca7c8c414dedbced884b3637308d.bindPopup(popup_c2081a7c50994328a8ee686924aa00ff)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_e20acfd356304e829c321694e2678dd7, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-d0861936abf0e97d10fd7b79e1eae42c"}, "datasets": {"data-d0861936abf0e97d10fd7b79e1eae42c": [{"Forecast": null, "NO2_index": 45.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 26.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 25.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 27.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 29.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 22.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 21.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 25.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 39.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 33.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 28.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 21.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 29.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 35.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 53.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 68.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 75.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 74.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 62.2983213735063, "NO2_index": 76.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 50.83922555282704, "NO2_index": 50.83922555282704, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 50.702871307359246, "NO2_index": 50.702871307359246, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 44.37447587665285, "NO2_index": 44.37447587665285, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 46.24550941547899, "NO2_index": 46.24550941547899, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 52.970454945292026, "NO2_index": 52.970454945292026, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 44.31132460453151, "NO2_index": 44.31132460453151, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 46.377933379034125, "NO2_index": 46.377933379034125, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 44.06096342746915, "NO2_index": 44.06096342746915, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 43.30091358140355, "NO2_index": 43.30091358140355, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 42.935587149507775, "NO2_index": 42.935587149507775, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 39.781684826980865, "NO2_index": 39.781684826980865, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 38.47034442566208, "NO2_index": 38.47034442566208, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 34.390164379490706, "NO2_index": 34.390164379490706, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 43.62624211769163, "NO2_index": 43.62624211769163, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 37.92541038552232, "NO2_index": 37.92541038552232, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 39.31789888099442, "NO2_index": 39.31789888099442, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 39.34558384696008, "NO2_index": 39.34558384696008, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 38.02812336106665, "NO2_index": 38.02812336106665, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 44.457188498358164, "NO2_index": 44.457188498358164, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 46.884679665828706, "NO2_index": 46.884679665828706, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 49.993270248929306, "NO2_index": 49.993270248929306, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 48.96822063858072, "NO2_index": 48.96822063858072, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 50.8915728776527, "NO2_index": 50.8915728776527, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 47.429654601638255, "NO2_index": 47.429654601638255, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 39.0046227921178, "NO2_index": 39.0046227921178, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector089": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_4e72ca7c8c414dedbced884b3637308d.bindTooltip(
+                `<div>
+                     Station 50
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2aa5a776e5074375808e34e77d0fa87b = L.marker(
+                [40.3730118, -3.6121394],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_e846ddea4bc8486b9b75cc4ce8061225 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_2aa5a776e5074375808e34e77d0fa87b.setIcon(icon_e846ddea4bc8486b9b75cc4ce8061225);
+        
+    
+        var popup_059f9d09c16d4fe6b81d81523d3d0768 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_d7895e2fbbd24522a2027e43765d6824 = $(`             <div id="vega_lite_d7895e2fbbd24522a2027e43765d6824"></div>             `)[0];
+            popup_059f9d09c16d4fe6b81d81523d3d0768.setContent(vega_lite_d7895e2fbbd24522a2027e43765d6824);
+        
+
+        marker_2aa5a776e5074375808e34e77d0fa87b.bindPopup(popup_059f9d09c16d4fe6b81d81523d3d0768)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_d7895e2fbbd24522a2027e43765d6824, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-f7d9b53635e007e839eed7d5434bfe54"}, "datasets": {"data-f7d9b53635e007e839eed7d5434bfe54": [{"Forecast": null, "NO2_index": 47.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 39.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 43.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 37.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 28.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 25.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 25.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 38.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 40.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 39.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 37.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 32.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 34.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 33.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 32.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 31.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 40.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 47.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 47.65224769949998, "NO2_index": 70.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 37.077459041318384, "NO2_index": 37.077459041318384, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 38.227030770602795, "NO2_index": 38.227030770602795, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 35.36507120592984, "NO2_index": 35.36507120592984, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 36.1283227492174, "NO2_index": 36.1283227492174, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 38.15259650240746, "NO2_index": 38.15259650240746, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 40.97277822195862, "NO2_index": 40.97277822195862, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 43.542757105161805, "NO2_index": 43.542757105161805, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 44.48942183635639, "NO2_index": 44.48942183635639, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 42.669233417632064, "NO2_index": 42.669233417632064, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 40.34646168749256, "NO2_index": 40.34646168749256, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 35.85409626360461, "NO2_index": 35.85409626360461, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 34.13108350692258, "NO2_index": 34.13108350692258, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 37.711172101589725, "NO2_index": 37.711172101589725, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 40.835678681123824, "NO2_index": 40.835678681123824, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 37.53091799979927, "NO2_index": 37.53091799979927, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 34.426779133913605, "NO2_index": 34.426779133913605, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 38.364406267131024, "NO2_index": 38.364406267131024, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 36.572992822331415, "NO2_index": 36.572992822331415, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 41.11942989872942, "NO2_index": 41.11942989872942, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 40.879025003929804, "NO2_index": 40.879025003929804, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 42.768468665336364, "NO2_index": 42.768468665336364, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 41.39138641981551, "NO2_index": 41.39138641981551, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 42.15315145107433, "NO2_index": 42.15315145107433, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 42.59380681317221, "NO2_index": 42.59380681317221, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 36.697845057172714, "NO2_index": 36.697845057172714, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector090": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_2aa5a776e5074375808e34e77d0fa87b.bindTooltip(
+                `<div>
+                     Station 54
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e026e63365ca422c989ba2b310bbd465 = L.marker(
+                [40.4623628, -3.5805649],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_cdc5adbefec54ce5bee3108e9f0494af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_e026e63365ca422c989ba2b310bbd465.setIcon(icon_cdc5adbefec54ce5bee3108e9f0494af);
+        
+    
+        var popup_587bb830a5cc4850a9785d229d7aacb8 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_48017a5e56464020afdf2a0afc8daf4c = $(`             <div id="vega_lite_48017a5e56464020afdf2a0afc8daf4c"></div>             `)[0];
+            popup_587bb830a5cc4850a9785d229d7aacb8.setContent(vega_lite_48017a5e56464020afdf2a0afc8daf4c);
+        
+
+        marker_e026e63365ca422c989ba2b310bbd465.bindPopup(popup_587bb830a5cc4850a9785d229d7aacb8)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_48017a5e56464020afdf2a0afc8daf4c, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-1c6545b4d043ac980da7106491c90300"}, "datasets": {"data-1c6545b4d043ac980da7106491c90300": [{"Forecast": null, "NO2_index": 42.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 42.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 30.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 27.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 33.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 31.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 40.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 47.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 48.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 43.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 50.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 41.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 31.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 29.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 53.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 59.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 59.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 61.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 49.36173320173181, "NO2_index": 72.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 40.01738300853262, "NO2_index": 40.01738300853262, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 42.04182222345391, "NO2_index": 42.04182222345391, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 43.234248716182556, "NO2_index": 43.234248716182556, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 43.94236940139015, "NO2_index": 43.94236940139015, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 43.979694095948716, "NO2_index": 43.979694095948716, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 45.65399634482197, "NO2_index": 45.65399634482197, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 46.341978944287874, "NO2_index": 46.341978944287874, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 44.6863417320307, "NO2_index": 44.6863417320307, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 41.56844190110681, "NO2_index": 41.56844190110681, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 43.02039004815341, "NO2_index": 43.02039004815341, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 39.25233234803544, "NO2_index": 39.25233234803544, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 39.584042891051624, "NO2_index": 39.584042891051624, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 39.3327395509248, "NO2_index": 39.3327395509248, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 44.199941109683515, "NO2_index": 44.199941109683515, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 43.74808188832596, "NO2_index": 43.74808188832596, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 38.10685742913187, "NO2_index": 38.10685742913187, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 42.84126631593187, "NO2_index": 42.84126631593187, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 40.50421109579196, "NO2_index": 40.50421109579196, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 42.10591175293304, "NO2_index": 42.10591175293304, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 46.58318830323227, "NO2_index": 46.58318830323227, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 48.341445175048584, "NO2_index": 48.341445175048584, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 46.3466211464575, "NO2_index": 46.3466211464575, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 47.46086297155357, "NO2_index": 47.46086297155357, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 43.31064407197084, "NO2_index": 43.31064407197084, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 36.60519633042803, "NO2_index": 36.60519633042803, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector091": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_e026e63365ca422c989ba2b310bbd465.bindTooltip(
+                `<div>
+                     Station 55
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b3c4b21629d47e1a5beeb286061c9d6 = L.marker(
+                [40.3850336, -3.7187679],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_0c1911a3e32347569458cb1d845d19f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_5b3c4b21629d47e1a5beeb286061c9d6.setIcon(icon_0c1911a3e32347569458cb1d845d19f6);
+        
+    
+        var popup_74ff33ddc06141d88f251628324b9951 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_74534f9ce0b24ac3861baa6deca9e4c7 = $(`             <div id="vega_lite_74534f9ce0b24ac3861baa6deca9e4c7"></div>             `)[0];
+            popup_74ff33ddc06141d88f251628324b9951.setContent(vega_lite_74534f9ce0b24ac3861baa6deca9e4c7);
+        
+
+        marker_5b3c4b21629d47e1a5beeb286061c9d6.bindPopup(popup_74ff33ddc06141d88f251628324b9951)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_74534f9ce0b24ac3861baa6deca9e4c7, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-ffbb9c1d8ab5c0f7a9d061f8cbc36ed3"}, "datasets": {"data-ffbb9c1d8ab5c0f7a9d061f8cbc36ed3": [{"Forecast": null, "NO2_index": 51.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 47.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 40.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 38.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 34.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 31.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 32.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 33.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 34.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 40.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 45.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 48.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 53.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 54.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 52.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 57.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 64.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 75.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 58.23774606868535, "NO2_index": 95.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 50.772067544874474, "NO2_index": 50.772067544874474, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 54.64218685109023, "NO2_index": 54.64218685109023, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 50.85963520225499, "NO2_index": 50.85963520225499, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 51.67453729386607, "NO2_index": 51.67453729386607, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 50.56292136342065, "NO2_index": 50.56292136342065, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 58.020911743303635, "NO2_index": 58.020911743303635, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 51.420238662767915, "NO2_index": 51.420238662767915, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 58.136289644697214, "NO2_index": 58.136289644697214, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 54.47923733653901, "NO2_index": 54.47923733653901, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 50.150999544166794, "NO2_index": 50.150999544166794, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 48.30514335789297, "NO2_index": 48.30514335789297, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 44.60871553321486, "NO2_index": 44.60871553321486, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 45.855586418739534, "NO2_index": 45.855586418739534, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 54.418622364638935, "NO2_index": 54.418622364638935, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 52.17748741038737, "NO2_index": 52.17748741038737, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 46.49983051164165, "NO2_index": 46.49983051164165, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 50.24472454166353, "NO2_index": 50.24472454166353, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 55.51738905210861, "NO2_index": 55.51738905210861, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 51.20681069673358, "NO2_index": 51.20681069673358, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 57.59704285413207, "NO2_index": 57.59704285413207, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 58.25710322630911, "NO2_index": 58.25710322630911, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 54.92688323122333, "NO2_index": 54.92688323122333, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 61.814086395817604, "NO2_index": 61.814086395817604, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 53.08120166045924, "NO2_index": 53.08120166045924, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 48.6854167730342, "NO2_index": 48.6854167730342, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector092": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_5b3c4b21629d47e1a5beeb286061c9d6.bindTooltip(
+                `<div>
+                     Station 56
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d23fdf920dba4395a1d93f65e70c77c1 = L.marker(
+                [40.4942012, -3.6605173],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_fb3d720485c04ee3982e54d6a9ff72da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_d23fdf920dba4395a1d93f65e70c77c1.setIcon(icon_fb3d720485c04ee3982e54d6a9ff72da);
+        
+    
+        var popup_af01080093134baf9617c2e8dcbaa1ef = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_d5c0623966da4e8888800e1ea297a1cf = $(`             <div id="vega_lite_d5c0623966da4e8888800e1ea297a1cf"></div>             `)[0];
+            popup_af01080093134baf9617c2e8dcbaa1ef.setContent(vega_lite_d5c0623966da4e8888800e1ea297a1cf);
+        
+
+        marker_d23fdf920dba4395a1d93f65e70c77c1.bindPopup(popup_af01080093134baf9617c2e8dcbaa1ef)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_d5c0623966da4e8888800e1ea297a1cf, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-062f3b1cf307c5876246923b1d41bd4a"}, "datasets": {"data-062f3b1cf307c5876246923b1d41bd4a": [{"Forecast": null, "NO2_index": 52.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 25.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 15.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 19.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 29.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 18.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 20.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 22.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 16.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 28.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 22.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 21.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 16.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 19.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 31.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 43.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 38.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 68.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 52.19252467024704, "NO2_index": 91.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 39.263131531649485, "NO2_index": 39.263131531649485, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 41.02087452144842, "NO2_index": 41.02087452144842, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 35.37313063798276, "NO2_index": 35.37313063798276, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 35.012364739251424, "NO2_index": 35.012364739251424, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 36.050598876784804, "NO2_index": 36.050598876784804, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 41.738094551901945, "NO2_index": 41.738094551901945, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 37.67941402986318, "NO2_index": 37.67941402986318, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 36.14227824616537, "NO2_index": 36.14227824616537, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 34.32198921305058, "NO2_index": 34.32198921305058, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 38.674180258720696, "NO2_index": 38.674180258720696, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 31.435096822539336, "NO2_index": 31.435096822539336, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 32.54936230289355, "NO2_index": 32.54936230289355, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 27.948323193609983, "NO2_index": 27.948323193609983, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 33.2805265028827, "NO2_index": 33.2805265028827, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 31.143397788575342, "NO2_index": 31.143397788575342, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 29.624789656020216, "NO2_index": 29.624789656020216, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 31.66423468090523, "NO2_index": 31.66423468090523, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 32.07564848819629, "NO2_index": 32.07564848819629, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 33.849340475409946, "NO2_index": 33.849340475409946, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 37.26589280336382, "NO2_index": 37.26589280336382, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 38.33507548265729, "NO2_index": 38.33507548265729, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 38.4448686046769, "NO2_index": 38.4448686046769, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 46.9629818340994, "NO2_index": 46.9629818340994, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 39.704900950688014, "NO2_index": 39.704900950688014, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 30.741717865318588, "NO2_index": 30.741717865318588, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector093": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_d23fdf920dba4395a1d93f65e70c77c1.bindTooltip(
+                `<div>
+                     Station 57
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2682de4d05e94edea96def95e899dfed = L.marker(
+                [40.5180701, -3.7746101],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_3cc04929457c474e9c5f432fb0a314e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_2682de4d05e94edea96def95e899dfed.setIcon(icon_3cc04929457c474e9c5f432fb0a314e6);
+        
+    
+        var popup_b4c68b3af35a400d8f546dc14542f0b8 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_65cfa3e61473409093279e143eced60d = $(`             <div id="vega_lite_65cfa3e61473409093279e143eced60d"></div>             `)[0];
+            popup_b4c68b3af35a400d8f546dc14542f0b8.setContent(vega_lite_65cfa3e61473409093279e143eced60d);
+        
+
+        marker_2682de4d05e94edea96def95e899dfed.bindPopup(popup_b4c68b3af35a400d8f546dc14542f0b8)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_65cfa3e61473409093279e143eced60d, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-dc1a386e8c2589ba1ba97ce88bee1b1e"}, "datasets": {"data-dc1a386e8c2589ba1ba97ce88bee1b1e": [{"Forecast": null, "NO2_index": 14.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 12.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 11.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 9.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 8.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 7.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 9.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 10.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 11.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 10.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 10.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 11.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 15.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 15.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 22.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 20.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 30.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 51.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 47.570634460823364, "NO2_index": 44.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 40.94992465067634, "NO2_index": 40.94992465067634, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 33.14017623862772, "NO2_index": 33.14017623862772, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 29.95117043970537, "NO2_index": 29.95117043970537, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 27.526155628487558, "NO2_index": 27.526155628487558, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 26.891090925609465, "NO2_index": 26.891090925609465, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 23.44249292401653, "NO2_index": 23.44249292401653, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 25.082342128571668, "NO2_index": 25.082342128571668, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 23.65529044279847, "NO2_index": 23.65529044279847, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 21.2152027645849, "NO2_index": 21.2152027645849, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 21.295551280393102, "NO2_index": 21.295551280393102, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 18.518939037522827, "NO2_index": 18.518939037522827, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 18.342384425051613, "NO2_index": 18.342384425051613, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 16.324206250250246, "NO2_index": 16.324206250250246, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 19.049916145409583, "NO2_index": 19.049916145409583, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 18.125428872186557, "NO2_index": 18.125428872186557, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 16.895888842753898, "NO2_index": 16.895888842753898, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 17.116006394725574, "NO2_index": 17.116006394725574, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 18.872076073902424, "NO2_index": 18.872076073902424, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 21.510009093565788, "NO2_index": 21.510009093565788, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 22.80286049968108, "NO2_index": 22.80286049968108, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 20.95580488775503, "NO2_index": 20.95580488775503, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 23.001854868005765, "NO2_index": 23.001854868005765, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 25.6124245355821, "NO2_index": 25.6124245355821, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 24.866391034709373, "NO2_index": 24.866391034709373, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 22.106986748603852, "NO2_index": 22.106986748603852, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector094": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_2682de4d05e94edea96def95e899dfed.bindTooltip(
+                `<div>
+                     Station 58
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a647d257837473994f7b9bd59915571 = L.marker(
+                [40.4607255, -3.6163407],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_f5d4f64605e1403d86e282ee9afb8419 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_7a647d257837473994f7b9bd59915571.setIcon(icon_f5d4f64605e1403d86e282ee9afb8419);
+        
+    
+        var popup_83671d098d2b41a1b4594b2d124b155c = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_be8bce07e4114c2e92a1e4eb9382e0a2 = $(`             <div id="vega_lite_be8bce07e4114c2e92a1e4eb9382e0a2"></div>             `)[0];
+            popup_83671d098d2b41a1b4594b2d124b155c.setContent(vega_lite_be8bce07e4114c2e92a1e4eb9382e0a2);
+        
+
+        marker_7a647d257837473994f7b9bd59915571.bindPopup(popup_83671d098d2b41a1b4594b2d124b155c)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_be8bce07e4114c2e92a1e4eb9382e0a2, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-b79a4be32ed3f7cd9bad257c5795bcb2"}, "datasets": {"data-b79a4be32ed3f7cd9bad257c5795bcb2": [{"Forecast": null, "NO2_index": 15.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 11.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 9.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 7.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 6.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 6.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 7.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 13.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 16.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 12.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 11.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 10.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 15.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 14.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 15.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 26.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 41.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 55.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 50.87086986662631, "NO2_index": 67.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 38.22614017774586, "NO2_index": 38.22614017774586, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 36.669193010943495, "NO2_index": 36.669193010943495, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 32.08537094929163, "NO2_index": 32.08537094929163, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 30.44830680986607, "NO2_index": 30.44830680986607, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 27.379891305168336, "NO2_index": 27.379891305168336, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 28.691275265059467, "NO2_index": 28.691275265059467, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 30.76062860696795, "NO2_index": 30.76062860696795, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 28.66054286493945, "NO2_index": 28.66054286493945, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 25.556804014799972, "NO2_index": 25.556804014799972, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 28.330071860092144, "NO2_index": 28.330071860092144, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 27.83103965032824, "NO2_index": 27.83103965032824, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 26.053715329430553, "NO2_index": 26.053715329430553, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 25.315924698188155, "NO2_index": 25.315924698188155, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 28.433407912125844, "NO2_index": 28.433407912125844, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 25.32409879814989, "NO2_index": 25.32409879814989, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 19.291748008192485, "NO2_index": 19.291748008192485, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 22.53799121523876, "NO2_index": 22.53799121523876, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 25.853223346183608, "NO2_index": 25.853223346183608, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 28.39794275960586, "NO2_index": 28.39794275960586, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 28.43233949560218, "NO2_index": 28.43233949560218, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 29.973212209621774, "NO2_index": 29.973212209621774, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 33.65721485925701, "NO2_index": 33.65721485925701, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 37.634692073984795, "NO2_index": 37.634692073984795, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 36.51521406131863, "NO2_index": 36.51521406131863, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 29.416035239918706, "NO2_index": 29.416035239918706, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector095": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_7a647d257837473994f7b9bd59915571.bindTooltip(
+                `<div>
+                     Station 59
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d9b364eb14f4cef9c9832b2e6de9d56 = L.marker(
+                [40.5005477, -3.6897308],
+                {}
+            ).addTo(map_c1acd0e898ce44169636081ca03babfa);
+        
+    
+            var icon_72a6184555b142a2b27abeb614fdf9fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_3d9b364eb14f4cef9c9832b2e6de9d56.setIcon(icon_72a6184555b142a2b27abeb614fdf9fb);
+        
+    
+        var popup_563c5d2d0f484048bdb3e9d0ef16c214 = L.popup({"maxWidth": 650});
+
+        
+            var vega_lite_a5c11302a77c4c79914fb4b8a6144bd6 = $(`             <div id="vega_lite_a5c11302a77c4c79914fb4b8a6144bd6"></div>             `)[0];
+            popup_563c5d2d0f484048bdb3e9d0ef16c214.setContent(vega_lite_a5c11302a77c4c79914fb4b8a6144bd6);
+        
+
+        marker_3d9b364eb14f4cef9c9832b2e6de9d56.bindPopup(popup_563c5d2d0f484048bdb3e9d0ef16c214)
+        ;
+
+        
+            
+                    vegaEmbed(vega_lite_a5c11302a77c4c79914fb4b8a6144bd6, {"$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "config": {"view": {"continuousHeight": 300, "continuousWidth": 400}}, "data": {"name": "data-3276c86930da6a94184f041f0854fb6d"}, "datasets": {"data-3276c86930da6a94184f041f0854fb6d": [{"Forecast": null, "NO2_index": 63.0, "Source": "Measurement", "index": "2022-01-02T00:59:59"}, {"Forecast": null, "NO2_index": 42.0, "Source": "Measurement", "index": "2022-01-02T01:59:59"}, {"Forecast": null, "NO2_index": 29.0, "Source": "Measurement", "index": "2022-01-02T02:59:59"}, {"Forecast": null, "NO2_index": 33.0, "Source": "Measurement", "index": "2022-01-02T03:59:59"}, {"Forecast": null, "NO2_index": 37.0, "Source": "Measurement", "index": "2022-01-02T04:59:59"}, {"Forecast": null, "NO2_index": 34.0, "Source": "Measurement", "index": "2022-01-02T05:59:59"}, {"Forecast": null, "NO2_index": 36.0, "Source": "Measurement", "index": "2022-01-02T06:59:59"}, {"Forecast": null, "NO2_index": 36.0, "Source": "Measurement", "index": "2022-01-02T07:59:59"}, {"Forecast": null, "NO2_index": 37.0, "Source": "Measurement", "index": "2022-01-02T08:59:59"}, {"Forecast": null, "NO2_index": 35.0, "Source": "Measurement", "index": "2022-01-02T09:59:59"}, {"Forecast": null, "NO2_index": 40.0, "Source": "Measurement", "index": "2022-01-02T10:59:59"}, {"Forecast": null, "NO2_index": 38.0, "Source": "Measurement", "index": "2022-01-02T11:59:59"}, {"Forecast": null, "NO2_index": 34.0, "Source": "Measurement", "index": "2022-01-02T12:59:59"}, {"Forecast": null, "NO2_index": 26.0, "Source": "Measurement", "index": "2022-01-02T13:59:59"}, {"Forecast": null, "NO2_index": 38.0, "Source": "Measurement", "index": "2022-01-02T14:59:59"}, {"Forecast": null, "NO2_index": 45.0, "Source": "Measurement", "index": "2022-01-02T15:59:59"}, {"Forecast": null, "NO2_index": 52.0, "Source": "Measurement", "index": "2022-01-02T16:59:59"}, {"Forecast": null, "NO2_index": 54.0, "Source": "Measurement", "index": "2022-01-02T17:59:59"}, {"Forecast": 45.982298666175765, "NO2_index": 70.0, "Source": "Measurement", "index": "2022-01-02T18:59:59"}, {"Forecast": 39.311576687624566, "NO2_index": 39.311576687624566, "Source": "Prediction", "index": "2022-01-02T19:59:59"}, {"Forecast": 39.80315340690565, "NO2_index": 39.80315340690565, "Source": "Prediction", "index": "2022-01-02T20:59:59"}, {"Forecast": 35.31753599177983, "NO2_index": 35.31753599177983, "Source": "Prediction", "index": "2022-01-02T21:59:59"}, {"Forecast": 37.44980625423201, "NO2_index": 37.44980625423201, "Source": "Prediction", "index": "2022-01-02T22:59:59"}, {"Forecast": 37.74133645846609, "NO2_index": 37.74133645846609, "Source": "Prediction", "index": "2022-01-02T23:59:59"}, {"Forecast": 42.30429415427261, "NO2_index": 42.30429415427261, "Source": "Prediction", "index": "2022-01-03T00:59:59"}, {"Forecast": 42.32435299554872, "NO2_index": 42.32435299554872, "Source": "Prediction", "index": "2022-01-03T01:59:59"}, {"Forecast": 42.32479173078446, "NO2_index": 42.32479173078446, "Source": "Prediction", "index": "2022-01-03T02:59:59"}, {"Forecast": 40.7066593379115, "NO2_index": 40.7066593379115, "Source": "Prediction", "index": "2022-01-03T03:59:59"}, {"Forecast": 41.751339165896184, "NO2_index": 41.751339165896184, "Source": "Prediction", "index": "2022-01-03T04:59:59"}, {"Forecast": 38.08176668897555, "NO2_index": 38.08176668897555, "Source": "Prediction", "index": "2022-01-03T05:59:59"}, {"Forecast": 35.24019615872336, "NO2_index": 35.24019615872336, "Source": "Prediction", "index": "2022-01-03T06:59:59"}, {"Forecast": 33.54017419172979, "NO2_index": 33.54017419172979, "Source": "Prediction", "index": "2022-01-03T07:59:59"}, {"Forecast": 38.2097317448904, "NO2_index": 38.2097317448904, "Source": "Prediction", "index": "2022-01-03T08:59:59"}, {"Forecast": 34.20382887754291, "NO2_index": 34.20382887754291, "Source": "Prediction", "index": "2022-01-03T09:59:59"}, {"Forecast": 35.34538828502992, "NO2_index": 35.34538828502992, "Source": "Prediction", "index": "2022-01-03T10:59:59"}, {"Forecast": 34.56154480877485, "NO2_index": 34.56154480877485, "Source": "Prediction", "index": "2022-01-03T11:59:59"}, {"Forecast": 33.78319789869015, "NO2_index": 33.78319789869015, "Source": "Prediction", "index": "2022-01-03T12:59:59"}, {"Forecast": 36.466978238212825, "NO2_index": 36.466978238212825, "Source": "Prediction", "index": "2022-01-03T13:59:59"}, {"Forecast": 41.89642373778187, "NO2_index": 41.89642373778187, "Source": "Prediction", "index": "2022-01-03T14:59:59"}, {"Forecast": 41.709589298723735, "NO2_index": 41.709589298723735, "Source": "Prediction", "index": "2022-01-03T15:59:59"}, {"Forecast": 41.75582383018942, "NO2_index": 41.75582383018942, "Source": "Prediction", "index": "2022-01-03T16:59:59"}, {"Forecast": 41.951656966207935, "NO2_index": 41.951656966207935, "Source": "Prediction", "index": "2022-01-03T17:59:59"}, {"Forecast": 37.70549785050399, "NO2_index": 37.70549785050399, "Source": "Prediction", "index": "2022-01-03T18:59:59"}, {"Forecast": 33.120376656418706, "NO2_index": 33.120376656418706, "Source": "Prediction", "index": "2022-01-03T19:59:59"}]}, "encoding": {"color": {"field": "Source", "type": "nominal"}, "x": {"axis": {"title": "TIME"}, "field": "index", "type": "temporal"}, "y": {"axis": {"title": "NO_2 (\u00b5g/m^3)"}, "field": "NO2_index", "type": "quantitative"}}, "height": 200, "mark": "line", "selection": {"selector096": {"bind": "scales", "encodings": ["x", "y"], "type": "interval"}}, "title": "Today NO2 evolution & 24hour prediction", "width": 300})
+                        .then(function(result) {})
+                        .catch(console.error);
+                
+        
+    
+    
+            marker_3d9b364eb14f4cef9c9832b2e6de9d56.bindTooltip(
+                `<div>
+                     Station 60
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
