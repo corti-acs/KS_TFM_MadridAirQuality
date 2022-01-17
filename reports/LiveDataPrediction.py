@@ -11,7 +11,7 @@
 # 
 # **Disclaimer of live data: This data is live data automatically measured by the AirStations without any quality check, so data is pending to be reviewed and validated.**
 
-# In[1]:
+# In[8]:
 
 
 #Libraries
@@ -51,7 +51,7 @@ import statsmodels.api as sm
 
 # # Reading and preparing data
 
-# In[2]:
+# In[9]:
 
 
 #Loading the model previously designed in notebook 4.Modelling SARIMA poc16
@@ -60,7 +60,7 @@ import statsmodels.api as sm
 pickled_model = pickle.load(open('../models/poc_16_SARIMAmodel_301_311_12.pkl', 'rb'))
 
 
-# In[3]:
+# In[10]:
 
 
 
@@ -233,7 +233,7 @@ except:
  
 
 
-# In[4]:
+# In[11]:
 
 
 #Function to prepare data for prediction
@@ -277,7 +277,7 @@ def ppred (df):
             return df
 
 
-# In[5]:
+# In[12]:
 
 
 #Function to add prediction
@@ -305,7 +305,7 @@ def livepred(df):
 
 # To improve prediction it is needed to add all historical data for every station, so historical data is uploaded, transformed and concatenated to the live data
 
-# In[6]:
+# In[13]:
 
 
 #Reading dataframe with all historical data for AirQuality.
@@ -400,7 +400,7 @@ df_59 = pd.concat([df_59his, df_59])
 df_60 = pd.concat([df_60his, df_60])
 
 
-# In[7]:
+# In[14]:
 
 
 #Creation of dataframes with prediction passing two functions: 
@@ -436,7 +436,7 @@ df_60p=livepred(ppred(df_60))
 
 # # OTHER PLOTS TO INCLUDE THEM IN THE FRONT-END
 
-# In[8]:
+# In[15]:
 
 
 # N02 distribution per AirStation on live data and saving for stremlit frontend
@@ -454,13 +454,18 @@ df.groupby("AirStationId")['NO2_index'].plot(ax=ax);
 plt.ylabel("$NO_2 (µg/m^3)$")
 plt.xlabel("TIME (mm-dd hh)")
 plt.title("Today NO2 hourly evolution per Madrid AirStation",fontsize=14);
-plt.legend(title='Air Stations Ids',loc=2, bbox_to_anchor=(1,1));
-plt.savefig ('../reports/LineEvo.png')
+lg=plt.legend(title='Air Stations Ids',loc=2, bbox_to_anchor=(1,1));
+#plt.savefig ('../reports/LineEvo.png')
+plt.savefig('../reports/LineEvo.png', 
+            dpi=300, 
+            format='png', 
+            bbox_extra_artists=(lg,), 
+            bbox_inches='tight')
 
 
 # # FOLIUM MAP TO VISUALIZE PREDICTION RESULTS
 
-# In[9]:
+# In[16]:
 
 
 #Function to create prediction chart as a pop-up to be included in folium map
@@ -478,7 +483,7 @@ def popup (df):
         width=300,title="Today NO2 evolution & 24hour prediction").interactive()
 
 
-# In[10]:
+# In[17]:
 
 
 #Creation of charts per AirStations
@@ -510,7 +515,7 @@ chart59 = popup(df_59p)
 chart60 = popup(df_60p)
 
 
-# In[11]:
+# In[18]:
 
 
 #Folium framework
@@ -683,13 +688,13 @@ map
 
 # Map with the AirStation locations in Madrid. Clicking over everyone a popup chart is displayed showing the today measurements available (real time data), together 24hour prediction
 
-# In[12]:
+# In[19]:
 
 
 #Folium framework2 with color legend as per last measurement and tooltip with last measurement
 ##############################################################################################
 
-map = folium.Map(width=850,height=750,location=[40.4398904,-3.6903729], zoom_start=11,min_zoom=8,max_zoom=18)
+map = folium.Map(width=650,height=650,location=[40.4398904,-3.6903729], zoom_start=11,min_zoom=8,max_zoom=18)
 
 
 #Folium Airstations markers and pop-ups with measurements and predictions
@@ -1288,7 +1293,7 @@ map.save("../reports/MadridMap.html")
 map
 
 
-# In[13]:
+# In[20]:
 
 
 #Creating a html file to be read in the frontend to show the prediction time
