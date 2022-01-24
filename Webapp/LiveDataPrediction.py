@@ -11,7 +11,7 @@
 # 
 # **Disclaimer of live data: This data is live data automatically measured by the AirStations without any quality check, so data is pending to be reviewed and validated.**
 
-# In[8]:
+# In[1]:
 
 
 #Libraries
@@ -51,7 +51,7 @@ import statsmodels.api as sm
 
 # # Reading and preparing data
 
-# In[9]:
+# In[2]:
 
 
 #Loading the model previously designed in notebook 4.Modelling SARIMA poc16
@@ -60,7 +60,7 @@ import statsmodels.api as sm
 pickled_model = pickle.load(open('../models/poc_16_SARIMAmodel_301_311_12.pkl', 'rb'))
 
 
-# In[10]:
+# In[3]:
 
 
 
@@ -233,7 +233,7 @@ except:
  
 
 
-# In[11]:
+# In[4]:
 
 
 #Function to prepare data for prediction
@@ -277,7 +277,7 @@ def ppred (df):
             return df
 
 
-# In[12]:
+# In[5]:
 
 
 #Function to add prediction
@@ -305,7 +305,7 @@ def livepred(df):
 
 # To improve prediction it is needed to add all historical data for every station, so historical data is uploaded, transformed and concatenated to the live data
 
-# In[13]:
+# In[6]:
 
 
 #Reading dataframe with all historical data for AirQuality.
@@ -400,7 +400,7 @@ df_59 = pd.concat([df_59his, df_59])
 df_60 = pd.concat([df_60his, df_60])
 
 
-# In[14]:
+# In[7]:
 
 
 #Creation of dataframes with prediction passing two functions: 
@@ -436,7 +436,7 @@ df_60p=livepred(ppred(df_60))
 
 # # OTHER PLOTS TO INCLUDE THEM IN THE FRONT-END
 
-# In[15]:
+# In[8]:
 
 
 # N02 distribution per AirStation on live data and saving for stremlit frontend
@@ -444,7 +444,7 @@ df_60p=livepred(ppred(df_60))
 
 sbn.set(rc={'figure.figsize':(10, 5)})
 sbn.boxplot(data=df, x='AirStationId', y='NO2_index').set(title="Today N02 measurements per Madrid AirStation", ylabel='$NO_2 (µg/m^3)$');
-plt.savefig('../reports/BoxPlot.png')
+plt.savefig('../Webapp/BoxPlot.png')
 
 
 #Plotting NO2 hourly evolution per AirStation and saving for streamlit frontend
@@ -455,8 +455,8 @@ plt.ylabel("$NO_2 (µg/m^3)$")
 plt.xlabel("TIME (mm-dd hh)")
 plt.title("Today NO2 hourly evolution per Madrid AirStation",fontsize=14);
 lg=plt.legend(title='Air Stations Ids',loc=2, bbox_to_anchor=(1,1));
-#plt.savefig ('../reports/LineEvo.png')
-plt.savefig('../reports/LineEvo.png', 
+#plt.savefig ('../Webapp/LineEvo.png')
+plt.savefig('../Webapp/LineEvo.png', 
             dpi=300, 
             format='png', 
             bbox_extra_artists=(lg,), 
@@ -465,7 +465,7 @@ plt.savefig('../reports/LineEvo.png',
 
 # # FOLIUM MAP TO VISUALIZE PREDICTION RESULTS
 
-# In[16]:
+# In[9]:
 
 
 #Function to create prediction chart as a pop-up to be included in folium map
@@ -483,7 +483,7 @@ def popup (df):
         width=300,title="Today NO2 evolution & 24hour prediction").interactive()
 
 
-# In[17]:
+# In[10]:
 
 
 #Creation of charts per AirStations
@@ -515,7 +515,7 @@ chart59 = popup(df_59p)
 chart60 = popup(df_60p)
 
 
-# In[18]:
+# In[11]:
 
 
 #Folium framework
@@ -682,13 +682,13 @@ if chart60 is not None:
                  icon=folium.Icon(color="gray", icon='cloud',prefix='fa'),popup=popup,tooltip="Station 60").add_to(map)
 
 
-map.save("../reports/MadridMap_basic.html")
+map.save("../Webapp/MadridMap_basic.html")
 map
 
 
 # Map with the AirStation locations in Madrid. Clicking over everyone a popup chart is displayed showing the today measurements available (real time data), together 24hour prediction
 
-# In[19]:
+# In[12]:
 
 
 #Folium framework2 with color legend as per last measurement and tooltip with last measurement
@@ -1289,11 +1289,11 @@ if not df[df['AirStationId']==60][-1:].empty:
                      icon=folium.Icon(color="green", icon='cloud',prefix='fa'),
                      popup=popup,tooltip="AirStation: 60 / Current NO2: "+str(lastdata.iloc[0]['NO2_index'])).add_to(map)
 
-map.save("../reports/MadridMap.html")
+map.save("../Webapp/MadridMap.html")
 map
 
 
-# In[20]:
+# In[13]:
 
 
 #Creating a html file to be read in the frontend to show the prediction time
@@ -1306,12 +1306,6 @@ date_time
 
 #Saving as html
 htmlstring = date_time
-with open("../reports/PredTime.html", "w") as file:
+with open("../Webapp/PredTime.html", "w") as file:
     file.write(htmlstring)
-
-
-# In[ ]:
-
-
-
 
