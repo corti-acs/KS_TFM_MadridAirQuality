@@ -2,20 +2,31 @@
 This repository contains Study to predict pollution in Madrid city as part of a TFM for 2sd edition of Data Scientist Master Streaming 2021-2022 by KSCHOOL
 
 
-# Business Problem
+# ABSTRACT
 
-The objective of this study is to elaborate a method that can predict pollution peaks in Madrid city.
+Pollution around the main urban agglomerations across the globe is one of the main problems that governments of all countries try to mitigate every year. 
 
-WHY.  
-Pollutions peaks in Madrid are triggering traffic restrictions that can have an impact on the normal traffic flow in the city, disturbing business and citizens activities.
-In addition pollutions peaks have an impact on the health of the weakest or most vulnerable Madrid citizens,  so being capable to predict these episodes government could send recommendations to vulnerable population, trying to prevent the impact.
+This situation was growing and growing during last centuries, reaching the current levels that are causing the death of more than 7 Mill of inhabitants per year (data from Paris climate conference  . WHO); a part of impacting in the right child development, increasing the risk of suffering from acute respiratory diseases, and developing chronic diseases. 
 
-HOW. Creation of a prediction model capable to predict pollution for all AirStations in Madrid for the next 24 hours.
+In addition, the pollution has been identified as one of the main reasons of climate change.
+
+Governments from the main countries are trying to take decisions to reduce it… but without a relevant success, just only agreeing some “cosmetics” actions that are not attacking the problem from the root, probably due to the complexity to balance those measurements together with the economic country development.
+
+WHY
+One of the tools available for the governments to mitigate and prevent is the monitoring of the main pollution parameters in the air and try to estimate them for the future to trigger preventive actions for the citizens.
 
 
+WHERE
+This study will be focused on Madrid, one the European cities with highest mortality in Europe due to the N02 index  .
 
-Project Organization
-------------
+WHAT
+The goal of this study is to create a prediction model, based on the historical Air Station and Weather data network from “Ayuntamiento de Madrid”, with the objective to predict the pollution for the next 24 hours from the live data published for every Air Station.
+
+This will be visualized in a web front-end that allow to the end user to monitor situation (almost on real-time) per AirStation and the related prediction for everyone for the next 24 hours.
+
+
+Project Repository Organization
+-------------------------------
 
  
     ├── README.md          <- The top-level README for developers using this project.
@@ -25,38 +36,21 @@ Project Organization
     │   ├── processed      <- The final, canonical data sets for modeling.
     │   └── raw            <- The original, immutable data dump.
     │
-    ├── docs               <- General documentation & Memo
+    ├── docs               
+    │   ├──GeneralDocs     <- Generated graphics and figures to be used in reporting
+    │   └── MemoThesis     <- The original, immutable data dump.
+    │  
+    │  
+    ├── models             <- Trained model. Due to GIT size limitation this is shared via dropbox (see link in the Memo document)
     │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
+    ├── notebooks          <- Jupyter notebooks. 
     │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
+    ├── webapp           <- Generated analysis as HTML, PDF, LaTeX, etc.
     │   └── figures        <- Generated graphics and figures to be used in reporting
     │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment
     │
     ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-       ├── __init__.py    <- Makes src a Python module
-       │
-       ├── data           <- Scripts to download or generate data
-       │   └── make_dataset.py
-       │
-       ├── features       <- Scripts to turn raw data into features for modeling
-       │   └── build_features.py
-       │
-       ├── models         <- Scripts to train models and then use trained models to make
-       │   │                 predictions
-       │   ├── predict_model.py
-       │   └── train_model.py
-       │
-       └── visualization  <- Scripts to create exploratory and results oriented visualizations
-           └── visualize.py
+
     
-
-
 
