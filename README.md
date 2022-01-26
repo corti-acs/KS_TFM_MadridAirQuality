@@ -45,12 +45,11 @@ Project Repository Organization
     │
     ├── notebooks          <- Jupyter notebooks. 
     │
-    ├── webapp           <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
+    ├── webapp           <- .py files to run to get live data prediction and to launch streamlit dashboard. Also include different files used in this dashboard
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+   
+
 
     
 
