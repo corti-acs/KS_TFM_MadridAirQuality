@@ -36,8 +36,8 @@ Project Repository Organization
     │   └── raw           <- The original, immutable data dump.
     │
     ├── docs               
-    │   ├──GeneralDocs    <- Generated graphics and figures to be used in reporting
-    │   └──MemoThesis     <- The original, immutable data dump.
+    │   ├──GeneralDocs    <- Other documentation related to the study, to be used for adding extra context to the study
+    │   └──MemoThesis     <- MemoThesis
     │  
     │  
     ├── models            <- Trained model. Due to GIT size limitation this is shared via dropbox
