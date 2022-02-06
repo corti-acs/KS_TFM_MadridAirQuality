@@ -29,23 +29,24 @@ Project Repository Organization
 -------------------------------
 
  
-    ├── README.md          <- The top-level README for developers using this project.
+    ├── README.md         <- The top-level README for developers using this project.
     ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
+    │   ├── interim       <- Intermediate data that has been transformed.
+    │   ├── processed     <- The final, canonical data sets for modeling.
+    │   └── raw           <- The original, immutable data dump.
     │
     ├── docs               
-    │   ├──GeneralDocs     <- Generated graphics and figures to be used in reporting
-    │   └── MemoThesis     <- The original, immutable data dump.
+    │   ├──GeneralDocs    <- Generated graphics and figures to be used in reporting
+    │   └──MemoThesis     <- The original, immutable data dump.
     │  
     │  
-    ├── models             <- Trained model. Due to GIT size limitation this is shared via dropbox (see link in the Memo document)
+    ├── models            <- Trained model. Due to GIT size limitation this is shared via dropbox
+    │                        (see link in the Memo document)
     │
-    ├── notebooks          <- Jupyter notebooks. 
+    ├── notebooks         <- Jupyter notebooks. 
     │
-    ├── webapp           <- .py files to run to get live data prediction and to launch streamlit dashboard. Also include different files used in this dashboard
+    ├── webapp            <- .py files to run to get live data prediction and to launch streamlit dashboard. 
+    │                         Also include different files used in this dashboard
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment
    
